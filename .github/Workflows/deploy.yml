@@ -9,6 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,4 +21,4 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "."
-          target: "/home/tttest/domains/tttest.consolutechcloud.com/public_html"
+          target: "/home/guest07/domains/guest07.consolutechcloud.com/public_html"
